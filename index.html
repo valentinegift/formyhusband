@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #e91e63; }
+    </style>
+</head>
+<body>
+    <h1>💖 Valentine Website</h1>
+    <p>Template file not found. Please check your files.</p>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reasons = ["1. You never demand anything\\n2. You always support me\\n3. You make my life beautiful", "1. You never demand anything\\n2. You always support me\\n3. You make my life beautiful", "1. You never demand anything\\n2. You always support me\\n3. You make my life beautiful"];
+            const reasonElements = [
+                document.getElementById('reason1'),
+                document.getElementById('reason2'),
+                document.getElementById('reason3')
+            ];
+            
+            for (let i = 0; i < Math.min(reasons.length, reasonElements.length); i++) {
+                if (reasonElements[i] && reasons[i]) {
+                    reasonElements[i].textContent = reasons[i];
+                }
+            }
+        });
+        </script>
+        
+</body>
+</html>
